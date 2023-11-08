@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Real-time Character Count</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+    
+  </head>
+  <body
+    class="bg-[#fa8072] flex items-center justify-center pt-[15%] font-mono"
+  >
+    <div
+      class="bg-[#ffb6c1] rounded-lg shadow-2xl px-[1%] py-[3%] min-w-[450px]"
+    >
+      <div class="text-2xl font-bold pb-3">Real-time Character Counter</div>
+      <div>
+        <input type="text" id="textBox" placeholder="Please write your text here..." value="" class="mb-5 w-[100%] h-[100px] border-slate-400" />
+      </div>
+      <div class="flex justify-between text-lg font-bold text-[#808080]">
+        <p>
+          Total Charaters:
+          <span id="totalCharaters" class="text-[#6A5ACD]">0</span>
+        </p>
+        <p>Remaining: <span id="remaining" class="text-[#FF4500]">50</span></p>
+      </div>
+    </div>
+    <script defer src="./script.js"></script>
+  </body>
+</html>
